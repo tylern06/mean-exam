@@ -1,0 +1,62 @@
+div.container{
+	width: 60%;
+	height: 95%;
+/*	border: 1px black solid;*/
+	margin: 0px auto;
+	padding: 5px;
+}
+	div.row {
+		width: 100%;
+		min-height: 15%;
+		border: 1px black solid;
+		padding: 5px;
+	}
+	div.answerRow{
+		min-height: 5%;
+		border: 1px black solid; 	
+	}
+
+table {
+		border-collapse: collapse;
+		width: 100%;
+}
+		tr,td {
+			border: 1px solid black;
+			padding: 10px;
+		}
+		thead{
+			background-color: lightgrey;
+			font-weight: bold;
+		}
+
+	.errors {
+		color: red;
+	}
+div.form{
+	width: 300px;
+/*	border: 1px solid black;*/
+}
+ div.form .input, textarea{
+ 	width: 100%;
+ }
+
+div.links {
+	position: relative;
+	left: 90%;
+	display: inline-block;
+}
+ div.links button {
+ 	margin-left: 10px;
+ }
+ #submit{
+ 	margin-top: 10px;
+ }
+
+ #search{
+ 	float: right;
+ }
+
+ #likes{
+ 	position: relative;
+ 	left: 10px;
+ }

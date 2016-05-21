@@ -1,0 +1,15 @@
+<div ng-controller='questionsController'>
+	<div class='container'>
+	
+	<div class='links'><a href="#/dashboard">Home</a> | <a href="#/question/{{question._id}}">Go back to Question</a>
+		<button ng-click='logout()'>Logout</button></div>
+		<h1 ng-bind='question.question'></h1>
+		<h3 ng-bind='question.description'></h3>
+		<form>
+			<p>Your Answer <textarea col='5' rows='4' ng-model='newAnswer.answer'></textarea></p>
+			<p>Supporting details for your answer (optional) <textarea col='5' rows='4' ng-model='newAnswer.description'></textarea></p>
+			<input type='submit' ng-click='addAnswer(question._id)'>
+			<a href="#/dashboard">Cancel</a>
+		</form>
+	</div>
+</div>

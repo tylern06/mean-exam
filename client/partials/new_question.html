@@ -1,0 +1,17 @@
+<div ng-controller='questionsController'>
+	<div class='container'>
+
+		<div class='links'><a href="#/dashboard">Home</a> <button ng-click='logout()'>Logout</button>
+		
+		</div>
+
+		<h3 ng-if='errors.length > 0' ng-bind='errors'></h3>
+			<h1>New Question</h1>
+			<form>
+				<p>Question <textarea col='5' rows='4' ng-model='newQuestion.question'></textarea></p>
+				<p>Descriptions(optional) <textarea col='5' rows='4' ng-model='newQuestion.description'></textarea></p>
+				<input type='submit' ng-click='addQuestion()'>
+				<a href="#/dashboard">Cancel</a>
+			</form>
+	</div>
+</div>

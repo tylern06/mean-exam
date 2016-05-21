@@ -1,0 +1,26 @@
+<html ng-app='myApp'>
+	<head>
+		<title>MEAN Exam</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
+
+		<script src='scripts/app.js'></script>
+		<script src='scripts/controllers/users.js'></script>
+		<script src='scripts/controllers/questions.js'></script>
+		<script src='scripts/factories/question.js'></script>
+		<script src='scripts/factories/answer.js'></script>
+		<script src='scripts/factories/user.js'></script>
+		
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	</head>
+	<body>
+		   <div>
+        <!-- <a href="#/dashboard">Dashboard</a> | <a href="#/customers">Customers</a> | <a href="#/orders">Orders</a> | <a href="#/products">Products</a>
+         -->
+        <div ng-view="">
+        </div>
+    </div>
+	</body>
+</html>
+		
+	
